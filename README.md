@@ -5,3 +5,4 @@ Hands-on Blue Team and SOC learning portfolio (TryHackMe, Linux, logs, detection
 - Command Line
 - Windows & Active Directory Fundamentals
 - Networking
+- Cryptography
