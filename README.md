@@ -3,3 +3,4 @@ Hands-on Blue Team and SOC learning portfolio (TryHackMe, Linux, logs, detection
 ## 🧪 TryHackMe Labs
 - Linux Fundamentals
 - Command Line
+- Windows & Active Directory Fundamentals
