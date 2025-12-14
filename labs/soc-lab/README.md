@@ -37,10 +37,14 @@ to a centralized SIEM for analysis.
 
 ## 🖼️ Evidence
 
-Screenshots demonstrating:
-- Splunk server running
-- Active forwarder connection
-- Log events successfully indexed
-- Virtualized lab environment
+## 📸 Evidence
 
-See `/evidence` directory.
+All screenshots and validation artifacts collected during this lab execution are available in the evidence folder:
+
+➡️ [View evidence folder](./evidence)
+
+### Included Evidence
+- Splunk listening on TCP 9997
+- Universal Forwarder connected to indexer
+- journal.log events ingested
+- Host identification (kali)
