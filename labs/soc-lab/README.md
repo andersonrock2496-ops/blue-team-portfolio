@@ -1,31 +1,46 @@
-# 🧪 SOC Home Lab — Splunk, pfSense & Linux
+# SOC Lab – Splunk Enterprise + Kali Linux + pfSense
 
-## 🎯 Objective
-Build a hands-on SOC lab to practice log ingestion, monitoring, and incident analysis.
+## 📌 Overview
+This project demonstrates a basic Security Operations Center (SOC) lab focused on
+log ingestion and visibility using Splunk Enterprise and Splunk Universal Forwarder.
+
+The lab simulates a realistic environment where a Linux host forwards system logs
+to a centralized SIEM for analysis.
+
+---
 
 ## 🧱 Lab Architecture
-- Host OS: Linux Mint
-- Hypervisor: VirtualBox
-- Firewall: pfSense
-- SIEM: Splunk
-- Server: Ubuntu Server
-- Endpoints: 2 test hosts
 
-## 🔍 Lab Purpose (SOC Perspective)
-This lab simulates a small enterprise environment to:
-- Collect and analyze logs
-- Monitor network and system activity
-- Detect suspicious behavior
-- Practice incident response workflows
+- **Splunk Server (Indexer + Search Head)**
+  - IP: `192.168.10.104`
+  - Receiving data on TCP `9997`
 
-## 🛠 Tools Used
-- Splunk
-- pfSense
-- Ubuntu Server
-- VirtualBox
-- Linux command line
+- **Kali Linux**
+  - Splunk Universal Forwarder installed
+  - System logs forwarded from `journal.log`
 
-## 🚀 Next Steps
-- Enable log forwarding to Splunk
-- Create basic dashboards
-- Simulate security events
+- **pfSense**
+  - Acts as the network perimeter firewall
+  - Provides realistic SOC lab topology
+
+---
+
+## 🔎 What Was Implemented
+
+- Installed and configured Splunk Enterprise
+- Installed Splunk Universal Forwarder on Kali Linux
+- Configured secure forwarding to Splunk Server
+- Verified data ingestion via Splunk Search
+- Confirmed active forwarder connection
+
+---
+
+## 🖼️ Evidence
+
+Screenshots demonstrating:
+- Splunk server running
+- Active forwarder connection
+- Log events successfully indexed
+- Virtualized lab environment
+
+See `/evidence` directory.
